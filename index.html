@@ -11,112 +11,139 @@
 <body>
   <!-- Header section -->
   <header>
-    <img src="./assets/images/us-dollar-coin.png" alt="US Dollar" height="64">
+    <img src="./assets/images/us-dollar-coin.png" alt="US Dollar" height="48">
     <h1>Exchange Rate Calculator</h1>
-    <img src="./assets/images/pound-coin.png" alt="Euro" height="64">
+    <img src="./assets/images/pound-coin.png" alt="Euro" height="48">
   </header>
 
-  <!-- Most traded currencies section -->
-  <section class="most-traded">
-    <table>
-      <tr>
-        <th>Exchange Pair</th>
-        <th>Today's Rate</th>
-        <th>Diff from Yesterday (%)</th>
-      </tr>
-      <tr>
-        <td>EUR/USD</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>USD/JPY</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>GBP/USD</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>USD/CHF</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>USD/INR</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>AUD/USD</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>USD/CAD</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>NZD/USD</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>EUR/GBP</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>EUR/JPY</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>EUR/CHF</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-      <tr>
-        <td>INR/USD</td>
-        <td>1.22</td>
-        <td>0</td>
-      </tr>
-    </table>
-  </section>
+  <main class="main-content">
+    <!-- Most traded currencies section -->
+    <section class="most-traded">
+      <h3>Most Traded Exchanges</h3>
+      <table>
+        <tr>
+          <th>Exchange Pair</th>
+          <th>Today's Rate</th>
+          <th>Diff from Yesterday (%)</th>
+        </tr>
+        <tr>
+          <td>EUR/USD</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>USD/JPY</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>GBP/USD</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>USD/CHF</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>USD/INR</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>AUD/USD</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>USD/CAD</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>NZD/USD</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>EUR/GBP</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>EUR/JPY</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>EUR/CHF</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>INR/USD</td>
+          <td>1.22</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </section>
 
-  <!-- Exchange rate section -->
-  <section class="exchange-rate">
-    <h3>Current Exchange Rate</h3>
-    <form class="converter">
-      <label for="from-cur">Currency I have: </label>
-      <select name="from" id="from-cur">
-        <option value="USD">USD - Dollar</option>
-        <option value="INR">INR - Rupee</option>
-      </select>
-      <label for="from-amt-rate">Amount: </label>
-      <input type="text" name="from-amt" id="from-amt-rate">
-      <label for="to-cur">Currency I want: </label>
-      <select name="to" id="to-cur">
-        <option value="USD">GBP - Pound</option>
-        <option value="INR">EUR - Euro</option>
-      </select>
-      <label for="to-amt-rate">Amount: </label>
-      <input type="text" name="to-amt" id="to-amt-rate">
-      <button type="button">Convert</button>
-    </form>
-  </section>
 
-  <section class="graph">
-    <div class="toggles">
-      <span>1D</span>
-      <span>3D</span>
-      <span>5D</span>
-      <span>1W</span>
+    <div class="exchange-rate-container">
+      <!-- Exchange rate section -->
+      <section class="exchange-rate">
+        <h3>Know Your Exchange Rate</h3>
+        <form class="converter">
+          <section class="form-inputs">
+            <section class="row-inputs">
+              <label for="from-cur">Currency I have: </label>
+              <select name="from" id="from-cur">
+                <option value="USD">USD - Dollar</option>
+                <option value="INR">INR - Rupee</option>
+              </select>
+              <label for="from-amt-rate">Amount: </label>
+              <input type="text" name="from-amt" id="from-amt-rate">
+            </section>
+            <section class="row-inputs">
+              <label for="to-cur">Currency I want: </label>
+              <select name="to" id="to-cur">
+                <option value="USD">GBP - Pound</option>
+                <option value="INR">EUR - Euro</option>
+              </select>
+              <label for="to-amt-rate">Amount: </label>
+              <input type="text" name="to-amt" id="to-amt-rate">
+            </section>
+          </section>
+          <div class="button-container">
+            <button type="button" class="convert-button">Convert</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Graph plot section -->
+      <section class="graph" id="container">
+      </section>
+
+      <!-- Trends section -->
+      <div class="toggles">
+        <span>3D</span>
+        <span>5D</span>
+        <span>1W</span>
+      </div>
     </div>
-  </section>
+
+  </main>
+
+  <!-- Highcharts library -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <!-- Custom script files -->
+  <script src="scripts/highcharts.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 
 </html>

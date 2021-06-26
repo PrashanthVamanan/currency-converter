@@ -6,6 +6,9 @@ const displayChart = () => {
     title: {
       text: "Past Trends for the Selected Exchange",
     },
+    credits: {
+      enabled: false
+    },
     xAxis: {
       categories: [
         "11-03-2021",

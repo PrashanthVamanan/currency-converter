@@ -1,164 +1,271 @@
 @font-face {
-    font-family: 'Titillium Web';
-    src: url('../assets/fonts/TitilliumWeb-Regular.ttf');
+  font-family: 'Titillium Web';
+  src: url('../assets/fonts/TitilliumWeb-Regular.ttf');
 }
 
 :root {
-    --header: #112d4e;
-    --header-text: #f9f7f7;
-    --table-data: #07689f
+  --header: #112d4e;
+  --header-text: #f9f7f7;
+  --table-data: #07689f
 }
 
 body {
-    font-family: 'Titillium Web', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 
 /* Header section styles */
 
 header {
-    background-color: var(--header);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-    color: var(--header-text);
+  color: var(--header-text);
 }
 
 header img {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 
 /* Main content style rules */
 .main-content {
-    display: flex;
-    width: 100%;
-
+  display: flex;
+  width: 100%;
 }
 
 /* Most traded section style rules */
 
 .most-traded {
-    width: 22%;
-    margin: 0px 60px;
+  margin: 0px 60px;
 }
 
 .most-traded h3 {
-    text-align: center;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .most-traded table {
-    border: 2px solid var(--header);
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
+  border: 2px solid var(--header);
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
 .most-traded table th {
-    border-bottom: 15px solid var(--header);
-    padding: 8px;
+  border-bottom: 15px solid var(--header);
+  padding: 8px;
 }
 
 .most-traded table tr td {
-    text-align: center;
-    line-height: 1.8;
-    border: 2px solid var(--table-data);
+  text-align: center;
+  line-height: 1.8;
+  border: 2px solid var(--table-data);
 }
 
 /* Exchange rate container and form style rules */
 
 .exchange-rate-container {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
 }
 
 .exchange-rate h3 {
-    text-align: center;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .exchange-rate .converter {
-    margin: 0px auto;
-    border-radius: 5px;
-    width: 80%;
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
-    background-color: var(--header);
+  margin: 0px auto;
+  border-radius: 5px;
+  width: 80%;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
+  background-color: var(--header);
 }
 
 .converter .form-inputs {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .converter .row-inputs {
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .converter .row-inputs label {
-    margin: 5px 0px;
-    color: var(--header-text);
+  margin: 5px 0px;
+  color: var(--header-text);
 }
 
 .converter .row-inputs select {
-    padding: 10px 30px;
-    border-radius: 5px;
-    background-color: var(--header-text);
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: var(--header-text);
 }
 
 .converter .row-inputs input {
-    padding: 10px;
-    outline: none; 
-    border: none;
-    border-radius: 5px;
-    background-color: var(--header-text);
+  padding: 10px;
+  outline: none; 
+  border: none;
+  border-radius: 5px;
+  background-color: var(--header-text);
 }
 
 .converter .button-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .converter .convert-button {
-    margin: 20px 0px;
-    padding: 10px 70px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    background-color: var(--header-text);
-    font-size: 16px;
+  margin: 20px 0px;
+  padding: 10px 70px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--header-text);
+  font-size: 16px;
 }
 
 .converter .convert-button:hover,
 .exchange-rate-container .toggles:hover  {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Past week rates graph style rules */
 .exchange-rate-container .graph {
-    height: 250px;
-    width: 60%;
-    margin: 20px auto;
-    border-radius: 10px;
-    background-color: var(--header-text);
-    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
+  height: 250px;
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 10px;
+  background-color: var(--header-text);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
 }
 
 .exchange-rate-container .toggles {
-    text-align: center;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    bottom: 10px;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 8px 0px;
 }
 
 /* Active class for selection */
 .toggles span:first-of-type {
-    background-color: var(--header);
-    color: var(--header-text);
-    border-radius: 20%;
-    padding: 5px;
+  background-color: var(--header);
+  color: var(--header-text);
+  border-radius: 20%;
+  padding: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1355px) {
+  .most-traded table tr td {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .most-traded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .most-traded table th {
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .most-traded table tr td {
+    text-align: center;
+    line-height: 2.5;
+    border: 2px solid var(--table-data);
+  }
+
+  .exchange-rate-container {
+    width: 100%;
+  }
+
+  .exchange-rate h3 {
+    margin: 20px auto;
+  }
+
+  .exchange-rate-container .graph {
+    height: 250px;
+    width: 80%;
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  header img {
+    height: 24px;
+  }  
+
+  .most-traded {
+    width: 80%;
+  }
+
+  .converter .form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .converter .row-inputs select {
+    padding: 10px 100px;
+  }
+
+  .converter .convert-button {
+    margin: 30px 0px;
+    padding: 10px 125px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .most-traded {
+    width: 95%;
+  }
+
+  .most-traded table th {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .most-traded table tr td {
+    text-align: center;
+    line-height: 1.5;
+    border: 2px solid var(--table-data);
+  }
+
+  .converter .row-inputs select {
+    padding: 10px 50px;
+  }
+
+  .converter .convert-button {
+    padding: 10px 75px;
+  }
+
+  .exchange-rate-container .graph {
+    height: 250px;
+    width: 80%;
+    margin: 20px auto;
+  }
 }

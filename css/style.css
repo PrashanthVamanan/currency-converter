@@ -156,7 +156,7 @@ header img {
 }
 
 /* Active class for selection */
-.toggles span:first-of-type {
+.toggles span.active {
   background-color: var(--header);
   color: var(--header-text);
   border-radius: 20%;

@@ -1,4 +1,6 @@
-const displayChart = () => {
+const displayChart = config => {
+  let { categories, data, exchangePair, valueSuffix} = config;
+
   Highcharts.chart("container", {
     chart: {
       backgroundColor: "#f9f7f7",
@@ -10,14 +12,7 @@ const displayChart = () => {
       enabled: false
     },
     xAxis: {
-      categories: [
-        "11-03-2021",
-        "12-03-2021",
-        "13-03-2021",
-        "14-03-2021",
-        "15-03-2021",
-        "16-03-2021",
-      ],
+      categories,
       tickmarkPlacement: "on",
       title: {
         enabled: false,
@@ -31,7 +26,7 @@ const displayChart = () => {
     },
     tooltip: {
       split: true,
-      valueSuffix: " PHP",
+      valueSuffix
     },
     plotOptions: {
       series: {
@@ -43,8 +38,8 @@ const displayChart = () => {
     },
     series: [
       {
-        name: "USD-PHP",
-        data: [48.4, 48.49, 48.49, 48.49, 48.54, 48.62],
+        name: exchangePair,
+        data,
       },
     ]
   });

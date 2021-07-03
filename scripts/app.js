@@ -44,7 +44,7 @@ function plotPastTrendsGraph(timePeriod) {
 
   //TODO:
   //Call api to get range of values by passing first and last values
-  //of nDate variable in yyyy-mm-dd format
+  //of nDates variable in yyyy-mm-dd format
 
   //Access the mock response for the selected time period
   let dataForNewTimePeriod = timePeriodValues[newTimePeriod];
